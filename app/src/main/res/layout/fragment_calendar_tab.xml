@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.swipe.CalendarTabFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/calendarView"
+        android:layout_gravity="center_horizontal|top"
+        android:firstDayOfWeek="1"
+        android:clickable="true"
+        android:visibility="visible"
+        android:touchscreenBlocksFocus="false"
+        android:minDate="10/01/2015"
+        android:maxDate="11/31/2015"
+        android:weekSeparatorLineColor="@android:color/holo_blue_light"
+        android:selectedDateVerticalBar="@android:color/holo_orange_light"
+        />
+</FrameLayout>

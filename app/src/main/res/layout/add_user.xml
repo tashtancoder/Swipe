@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/labelServer"
+        android:id="@+id/textViewServer"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/editTextServer"
+        android:layout_alignStart="@+id/editTextServer"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/serverName"
+        android:ems="10"
+        android:id="@+id/editTextServer"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:layout_below="@+id/textViewServer"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/userNo"
+        android:id="@+id/textViewUser"
+        android:layout_below="@+id/editTextServer"
+        android:layout_alignLeft="@+id/editTextServer"
+        android:layout_alignStart="@+id/editTextServer"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:foregroundGravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/userName"
+        android:ems="10"
+        android:id="@+id/editTextUser"
+        android:layout_below="@+id/textViewUser"
+        android:layout_alignLeft="@+id/textViewUser"
+        android:layout_alignStart="@+id/textViewUser"
+        android:gravity="center"
+        android:foregroundGravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/labelPassword"
+        android:id="@+id/textViewPassword"
+        android:layout_below="@+id/editTextUser"
+        android:layout_alignLeft="@+id/editTextUser"
+        android:layout_alignStart="@+id/editTextUser"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:foregroundGravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextPassword"
+        android:layout_below="@+id/textViewPassword"
+        android:layout_alignLeft="@+id/textViewPassword"
+        android:layout_alignStart="@+id/textViewPassword"
+        android:singleLine="true"
+        android:gravity="center"
+        android:foregroundGravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_real"
+        android:text="@string/addUser"
+        android:id="@+id/buttonAddUser"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:singleLine="false"
+        android:ellipsize="marquee"
+        android:onClick="buttonAddNewUserOnClick"
+        android:width="@dimen/abc_action_bar_stacked_tab_max_width" />
+
+</RelativeLayout>

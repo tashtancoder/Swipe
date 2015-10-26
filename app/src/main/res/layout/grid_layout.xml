@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/flag"
+        android:padding="10dp"
+        android:layout_width="@dimen/menu_image_width_height"
+        android:layout_height="@dimen/menu_image_width_height" />
+
+    <ImageView
+        android:id="@+id/redCircle"
+        android:paddingTop="1dp"
+        android:paddingRight="0dp"
+
+        android:layout_width="@dimen/menu_circle_index_width_height"
+        android:layout_height="@dimen/menu_circle_index_width_height"
+        android:layout_alignTop="@+id/flag"
+        android:layout_alignRight="@+id/flag"
+        android:src="@drawable/indexer_colored" />
+
+
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/menu_indexer_textsize"
+        android:gravity="right"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:layout_gravity="center_vertical"
+        android:layout_alignTop="@+id/flag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/index"
+        android:layout_alignBottom="@+id/redCircle"
+        android:paddingRight="15dp"
+        android:paddingTop="13dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/menu_labels_textsize"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/flag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>
